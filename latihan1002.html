@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form element</title>
+</head>
+<body>
+     <form name="latihan02"method="post"onsubmit="return checkfrom(this)">
+
+        <label>NIM</label>
+        <input type="text" name="txNIM">
+
+        <label>NAMA</label>
+        <input type="text" name="txNAMA">
+
+        <label>ALAMAT</label>
+        <input type="text" name="txALAMAT">
+
+
+        <label>jenis kelamin</label>
+        <input type="radio" name="txjk" value="L">laki-laki
+        <input type="radio " name="txjK" value="P">perempuan
+
+        
+
+        <button type="submit">kirim data</button>
+
+    <form>
+
+    <script type="text/javascript">
+
+        function checkfrom(frm){
+            let form = frm.elements;
+            let NIM = form.namedItem("txNIM").value;
+            let NAMA = form.namedItem("txNAMA").value;
+            let ALAMAT = form.namedItem("txALAMAT").value;
+            let JKEL = form.namaedItem("txjk").value;
+            
+            
+            console.log("NIM: "+NIM);
+            console.log("NAMA: "+NAMA);
+            console.log("ALAMAT: "+ALAMAT);
+            console.log("JK: "+JKL);
+            
+
+
+
+            return false;
+        }
+    </script>
+    </form>
+ 
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form element</title>
+</head>
+<body>
+     <form name="latihan01"method="post"onsubmit="return checkfrom(this)">
+
+        <label>NIM</label>
+        <input type="text" name="txNIM">
+
+
+        <label>jenis kelamin</label>
+        <input type="radio" name="txjk" value="L">laki-laki
+        <input type="radio " name="txJK" value="P">perempuan
+
+        <label>jurusan </label>
+        <select name="txJURUSAN">
+        
+            <option value="MTI">MTI</option>
+            <option value="KAB">KAB</option>
+            <option value="SK">SK</option>
+            <option value="BD">BD</option>
+        <</select>
+
+        <label >hobi </label>
+        <input type="checkbox" name="txhobimakan" value="`1">makan mie
+        <input type="checkbox" name="txhobirenang" value="2"> renang
+        <input type="checkbok" name="txhobilari" value="3">lari
+
+        <button type="submit">kirim data</button>
+    </form>
+
+    <script type="text/javascript">
+    
+    function checkform(fra)
+        let form= fra.elements;
+        let NIM= form.namedItem("txNIM").value; 
+        let JKEL = form.namedItem("txJK").value;
+        let JUR = form.namedItem("txJURUSAN").value;
+        let HOBBY = [
+    
+    form.namedItem("txHOBIBOLA").checked
+    
+ 
+</body>
+</html>
